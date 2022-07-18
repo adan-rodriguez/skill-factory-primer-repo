@@ -2,89 +2,177 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  z-index: 1;
+  position: relative;
 }
 
-.grandparentContainer {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 580px;
+  font-size: 18px;
 }
 
 .parentContainer {
+  width: 100%;
   display: flex;
+  background-color: white;
 }
 
 .pC1 {
-  height: 20%;
+  height: 70px;
+  position: fixed;
+  top: 0;
 }
 
-.pC2 {
-  height: 60%;
-}
-
-.pC3 {
-  height: 20%;
-}
-
-.childContainer {
-  border: 1px solid black;
+.cC1a,
+.cC1b,
+.cC1c,
+.cC1d,
+.cC1e,
+.cC1f,
+.cC1g {
+  border: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   display: flex;
-  font-size: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cC1a {
-  background-color: #f0223b;
-  width: 70%;
+  width: 25%;
 }
 
 .cC1b {
-  background-color: #fa23a9;
-  width: 30%;
-  justify-content: flex-end;
-  align-items: flex-end;
+  width: 40%;
+  border-right: none;
 }
 
-.cC2a {
-  background-color: #8d0e96;
-  width: 50%;
-  align-items: center;
+.cC1c {
+  width: 10%;
+  border-left: none;
 }
 
-.cC2b {
-  width: 50%;
-  flex-direction: column;
+.cC1d,
+.cC1e,
+.cC1f,
+.cC1g {
+  width: 6.25%;
 }
 
-.cC2b1 {
-  background-color: #14e3b5;
-  height: 50%;
-  justify-content: center;
-  align-items: center;
+.pC2 {
+  height: 510px;
+  background-image: url("https://www.esenzzia.com/modules/ps_imageslider/images/f84a8567c559b194fc58867a27b495da22b8a449_Post%20de%20Instagram%20rebajas%20ofertas%20descuentos%20femenino%20rosa%20(1947%C2%A0%C3%97%C2%A0876%C2%A0px)%20(1).png");
+  background-size: cover;
+  position: fixed;
+  top: 70px;
+  z-index: 0;
 }
 
-.cC2b2 {
-  background-color: #15967a;
-  height: 50%;
-  justify-content: center;
-  align-items: center;
+.btn-2a {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  padding: 20px 100px 20px 100px;
+  text-decoration: none;
+}
+
+.btn-2a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.5s;
+}
+
+.btn-help {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 530px;
+  right: 50px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.pC3 {
+  border-top: 2px solid black;
 }
 
 .cC3a {
-  background-color: #d72be3;
-  flex-grow: 1;
-  justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cC3a1 {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.cC3a2 {
+  margin: 50px;
+  font-weight: bold;
+  font-size: 80px;
 }
 
 .cC3b {
-  background-color: #f34aff;
-  flex-grow: 1;
-  align-items: flex-end;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 175px;
 }
 
-.cC3c {
-  background-color: #7be32b;
-  flex-grow: 1;
+.cC3b1 {
+  text-align: center;
+}
+
+.cC3b2 {
+  text-align: center;
+  font-size: 300px;
+  border-bottom: 2px solid black;
+}
+
+.cC3b3 {
+  display: flex;
+}
+
+.cC3b3a,
+.cC3b3b {
+  width: 50%;
+  height: 100px;
+  display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+
+.pC4 {
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 20%;
+  background-color: black;
+  color: white;
+}
+
+.card > p {
+  font-size: 15px;
+  margin: 10px 0 10px 20px;
+}
+
+.num {
+  font-size: 130px !important;
+  font-weight: bold;
+}
+
+.tachado {
+  text-decoration: line-through;
 }
